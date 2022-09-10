@@ -1,0 +1,15 @@
+[Unit]
+Description=autossh_for_ssh_by_docor_gw
+After=syslog.target network.target
+StartLimitIntervalSec=1000
+StartLimitBurst=100
+
+[Service]
+User=pi
+ExecStart=ssh -o ServerAliveInterval=3 -N -v docor-gw-remote
+Restart=always
+Type=simple
+RestartSec=1
+
+[Install]
+WantedBy=multi-user.target

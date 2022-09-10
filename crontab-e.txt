@@ -1,0 +1,1 @@
+0,30,* * * * flock -n /tmp/something.lock /home/pi/work/rsync_video.sh

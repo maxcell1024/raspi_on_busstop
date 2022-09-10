@@ -1,0 +1,14 @@
+[Unit]
+Description = capturing video daemon
+StartLimitIntervalSec=5000
+StartLimitBurst=100
+
+[Service]
+User = pi
+WorkingDirectory = /home/pi/work
+ExecStart = /usr/bin/python3 /home/pi/work/cap_video.py
+Restart = always
+Type = simple
+
+[Install]
+WantedBy = multi-user.target
