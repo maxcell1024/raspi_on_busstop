@@ -21,8 +21,6 @@ balenaEtcherを使ってSDカードのフラッシュ
 後はGUIで以下を実施．
 - Gpartedを用いてrootfsを8GBに固定
 - bootはそのままで残りの110GBをEXTRAFSというラベルで作成
-### リポジトリのクローン
-`git clone https://github.com/maxcell1024/raspi_on_busstop.git` 
 
 
 
