@@ -1,6 +1,6 @@
 import os
 
-os.chdir(r"/home/pi/work/mp4")
+os.chdir(r"/home/pi/EXTRAFS/mp4")
 files = os.listdir()
 for file in files:
     # rgb動画のとき
